@@ -68,28 +68,11 @@ chromatograms(object, ...)
 }
 
 \note{
-  More generics can be added on request by sending an email to the
-  Bioc-devel mailing list:
-
-    \url{http://bioconductor.org/help/mailing-list/}
-
-  Things that should NOT be added to the \pkg{BiocGenerics} package:
-  \itemize{
-    \item Internal generic primitive functions like \code{\link{length}},
-          \code{\link{dim}}, \code{`\link{dim<-}`}, etc...
-          See \code{?\link{InternalMethods}} for the complete list.
-          There are a few exceptions though, that is, the \pkg{BiocGenerics}
-          package may actually redefine a few of those internal generic
-          primitive functions as S4 generics when for example the signature
-          of the internal generic primitive is not appropriate (this is the
-          case for \code{BiocGenerics::\link[BiocGenerics]{cbind}}).
-
-    \item S3 and S4 group generic functions like \code{\link{Math}},
-          \code{\link{Ops}}, etc... See \code{?\link{groupGeneric}} and
-          \code{?\link{S4groupGeneric}} for the complete list.
-
-    \item Generics already defined in the \pkg{stats4} package.
-  }
+  More generics can be added on request by opening an issue or sending a
+  pull request on:
+  
+  \url{https://github.com/lgatto/ProtGenerics}
+  
 }
 
 
@@ -123,5 +106,3 @@ ls('package:ProtGenerics')
 
 
 \keyword{methods}
-
-

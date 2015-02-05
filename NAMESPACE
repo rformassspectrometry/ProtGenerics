@@ -1,16 +1,21 @@
 import(methods)
 import(BiocGenerics)
 
+export(psms,
+       peaks,
+       modifications,
+       database,
+       rtime,
+       tic,
+       spectra,
+       intensity,
+       mz,
+       peptides,
+       proteins,
+       accessions,
+       scans,
+       mass,
+       ions,
+       chromatograms)
 
-### ==========================================================================
-### Export functions defined in base R and explicitly promoted to generics in
-### the BiocGenerics package
-### --------------------------------------------------------------------------
-
-### Generics for functions defined in package base:
-export(
-    ## from R/append.R:
-    append,
-
-)
 

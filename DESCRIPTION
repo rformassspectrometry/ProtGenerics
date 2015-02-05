@@ -5,6 +5,6 @@ Version: 0.1.0
 Author: Laurent Gatto <lg390@cam.ac.uk>
 Maintainer: Laurent Gatto <lg390@cam.ac.uk>
 biocViews: Infrastructure, Proteomics, MassSpectrometry
+URL: https://github.com/lgatto/ProtGenerics
 Depends: methods, BiocGenerics
-Imports: methods, BiocGenerics
 License: Artistic-2.0
