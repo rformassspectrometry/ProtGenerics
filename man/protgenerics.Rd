@@ -26,13 +26,9 @@
 
 
 \description{
-
   These generic functions provide basic interfaces to operations on and
   data access to proteomics and mass spectrometry infrastructure in the
   Bioconductor project. 
- 
-
-
 }
 
 
