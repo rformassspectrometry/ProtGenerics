@@ -1,0 +1,21 @@
+import(methods)
+import(BiocGenerics)
+
+export(psms,
+       peaks,
+       modifications,
+       database,
+       rtime,
+       tic,
+       spectra,
+       intensity,
+       mz,
+       peptides,
+       proteins,
+       accessions,
+       scans,
+       mass,
+       ions,
+       chromatograms)
+
+
