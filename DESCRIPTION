@@ -1,7 +1,7 @@
 Package: ProtGenerics
 Title: S4 generic functions for Bioconductor proteomics infrastructure
 Description: S4 generic functions needed by Bioconductor proteomics packages.
-Version: 0.99.0
+Version: 0.99.1
 Author: Laurent Gatto <lg390@cam.ac.uk>
 Maintainer: Laurent Gatto <lg390@cam.ac.uk>
 biocViews: Infrastructure, Proteomics, MassSpectrometry
