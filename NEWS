@@ -1,3 +1,8 @@
+CHANGES IN VERSION 0.99.2
+-------------------------
+ o updating DESCRIPTION as with BiocContributions::clean
+   [2015-03-03 Tue]
+
 CHANGES IN VERSION 0.99.1
 -------------------------
  o Adding NEWS file [2015-02-27 Fri]
