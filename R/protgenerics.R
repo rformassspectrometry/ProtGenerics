@@ -1,3 +1,5 @@
+# GETTERS
+
 ## from mzR
 
 setGeneric("psms", function(object, ...) standardGeneric("psms"))
@@ -21,4 +23,7 @@ setGeneric("mass", function(object, ...) standardGeneric("mass"))
 setGeneric("ions", function(object, ...) standardGeneric("ions"))
 setGeneric("chromatograms", function(object, ...) standardGeneric("chromatograms")) 
 
+# SETTERS
 
+setGeneric("modifications<-", function(object, value) standardGeneric("modifications<-"))
+setGeneric("database<-", function(object, value) standardGeneric("database<-"))
