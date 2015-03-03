@@ -9,3 +9,4 @@ biocViews: Infrastructure, Proteomics, MassSpectrometry
 URL: https://github.com/lgatto/ProtGenerics
 Depends: methods, BiocGenerics
 License: Artistic-2.0
+NeedsCompilation: no
