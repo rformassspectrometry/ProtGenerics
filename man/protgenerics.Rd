@@ -21,7 +21,7 @@
 
 
 \title{
-  S4 generic functions of Bioconductor proteomics infrastructure
+  S4 generic functions for Bioconductor proteomics infrastructure
 }
 
 
