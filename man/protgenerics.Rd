@@ -28,9 +28,61 @@
 \description{
   These generic functions provide basic interfaces to operations on and
   data access to proteomics and mass spectrometry infrastructure in the
-  Bioconductor project. 
+  Bioconductor project.
+
+  For the details, please consult the respective methods' manual pages.
+
 }
 
+\details{
+
+  \subsection{When should one define a generics?}{
+
+    Generics are appropriate for functions that have \emph{generic}
+    names, i.e. names that occur in multiple circumstances, (with
+    different input classes, most often defined in different packages)
+    or, when (multiple) dispatching is better handled by the generics
+    mechanism rather than the developer. The dispatching mechanism will
+    then automatically call the appropriate method and save the user
+    from explicitly calling \code{package::method} or the developer to
+    handle the multiple input types cases. When no such conflict exists
+    or is unlikely to happen (for example when the name of the function
+    is specific to a package or domain, or for class slots accessors and
+    replacement methods), the usage of a generic is arguably
+    questionable, and in most of these cases, simple, straightforward
+    functions would be perfectly valid.
+
+  }
+
+  \subsection{When to define a generic in \code{ProtGenerics}?}{
+  
+    \code{ProtGenerics} is not meant to be the central package for
+    generics, nor should it stop developers from defining the generics
+    they need. It is a means to centralise generics that are defined in
+    different packages (for example \code{mzR::psms} and
+    \code{mzID::psms}, or \code{IRanges::score} and \code{mzR::score},
+    now \code{BioGenerics::score}) or generics that live in a rather big
+    package (say \code{mzR}) on which one wouldn't want to depend just
+    for the sake of that generics' definition.
+
+
+    The goal of \code{ProtGenerics} is to step in when namespace
+    conflicts arise so as to to facilitate inter-operability of
+    packages. In case such conflict appears due to multiple generics, we
+    would (1) add these same definitions in \code{ProtGenerics}, (2)
+    remove the definitions from the packages they stem from, which then
+    (3) only need to import \code{ProtGenerics}. This would be very
+    minor/straightforward changes for the developers and would resolve
+    issues when they arise.
+
+    More generics can be added on request by opening an issue or sending
+    a pull request on:
+  
+    \url{https://github.com/lgatto/ProtGenerics}
+
+  }
+  
+}
 
 \usage{
 psms(object, ...)
@@ -54,21 +106,7 @@ chromatograms(object, ...)
 
 \arguments{
   \item{object}{Object of class for which methods are defined. } 
-  \item{\dots}{Further arguments, perhaps used by methods. }
-}
-
-
-\details{
-  For the details, please consult the manual pages of the respective
-  methods.
-}
-
-\note{
-  More generics can be added on request by opening an issue or sending a
-  pull request on:
-  
-  \url{https://github.com/lgatto/ProtGenerics}
-  
+  \item{\dots}{Further arguments, possibly used by downstream methods. }
 }
 
 
@@ -98,6 +136,14 @@ chromatograms(object, ...)
 \examples{
 ## List all the symbols defined in this package:
 ls('package:ProtGenerics')
+
+\dontrun{
+    ## What methods exists for 'peaks'
+    showMethods("peaks")
+
+    ## To look at one method in particular
+    getMethod("peaks", "mzRpwiz")
+}
 }
 
 

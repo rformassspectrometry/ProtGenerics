@@ -1,3 +1,7 @@
+CHANGES IN VERSION 0.99.3
+-------------------------
+ o update man with when and why ProtGenerics [2015-03-16 Mon]
+ 
 CHANGES IN VERSION 0.99.2
 -------------------------
  o updating DESCRIPTION as with BiocContributions::clean
