@@ -104,3 +104,4 @@ showMethods("peaks")
 getMethod("peaks", "mzRpwiz")
 ## End(Not run)
 ```
+
