@@ -1,5 +1,4 @@
 ## from mzR
-
 setGeneric("psms", function(object, ...) standardGeneric("psms"))
 setGeneric("peaks", function(object, ...) standardGeneric("peaks")) 
 setGeneric("modifications", function(object, ...) standardGeneric("modifications"))
@@ -20,5 +19,8 @@ setGeneric("scans", function(object, ...) standardGeneric("scans"))
 setGeneric("mass", function(object, ...) standardGeneric("mass"))
 setGeneric("ions", function(object, ...) standardGeneric("ions"))
 setGeneric("chromatograms", function(object, ...) standardGeneric("chromatograms")) 
+
+
+setGeneric("mz<-", function(object, value) standardGeneric("mz<-"))
 
 
