@@ -19,6 +19,7 @@ setGeneric("scans", function(object, ...) standardGeneric("scans"))
 setGeneric("mass", function(object, ...) standardGeneric("mass"))
 setGeneric("ions", function(object, ...) standardGeneric("ions"))
 setGeneric("chromatograms", function(object, ...) standardGeneric("chromatograms")) 
+setGeneric("chromatogram", function(object, ...) standardGeneric("chromatogram")) 
 
 
 setGeneric("mz<-", function(object, value) standardGeneric("mz<-"))
