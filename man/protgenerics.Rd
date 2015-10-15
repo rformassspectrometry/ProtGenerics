@@ -18,6 +18,7 @@
 \alias{mass}
 \alias{ions}
 \alias{chromatograms}
+\alias{chromatogram}
 
 
 \title{
@@ -101,6 +102,7 @@ scans(object, ...)
 mass(object, ...)
 ions(object, ...)
 chromatograms(object, ...)
+chromatogram(object, ...)
 }
 
 

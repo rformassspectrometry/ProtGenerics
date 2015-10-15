@@ -27,6 +27,7 @@ scans(object, ...)
 mass(object, ...)
 ions(object, ...)
 chromatograms(object, ...)
+chromatogram(object, ...)
 ```
 
 ## Arguments:

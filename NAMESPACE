@@ -16,6 +16,7 @@ export(psms,
        scans,
        mass,
        ions,
-       chromatograms)
+       chromatograms,
+       chromatogram)
 
 
