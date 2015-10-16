@@ -106,49 +106,49 @@ Laurent Gatto <lg390@cam.ac.uk>
 
 ```r
 library("ProtGenerics")
-#> Loading required package: methods
+## Loading required package: methods
 ## List all the symbols defined in this package:
 ls('package:ProtGenerics')
-#>  [1] "accessions"    "chromatogram"  "chromatograms" "database"     
-#>  [5] "intensity"     "ions"          "mass"          "modifications"
-#>  [9] "mz"            "peaks"         "peptides"      "proteins"     
-#> [13] "psms"          "rtime"         "scans"         "spectra"      
-#> [17] "tic"
+##  [1] "accessions"    "chromatogram"  "chromatograms" "database"     
+##  [5] "intensity"     "ions"          "mass"          "modifications"
+##  [9] "mz"            "peaks"         "peptides"      "proteins"     
+## [13] "psms"          "rtime"         "scans"         "spectra"      
+## [17] "tic"
      
 library("mzR")
-#> Loading required package: Rcpp
+## Loading required package: Rcpp
 ## What methods exists for 'peaks'
 showMethods("peaks")
-#> Function: peaks (package ProtGenerics)
-#> object="mzRnetCDF"
-#> object="mzRpwiz"
-#> object="mzRramp"
+## Function: peaks (package ProtGenerics)
+## object="mzRnetCDF"
+## object="mzRpwiz"
+## object="mzRramp"
      
 ## To look at one method in particular
 getMethod("peaks", "mzRpwiz")
-#> Method Definition:
-#> 
-#> function (object, ...) 
-#> {
-#>     .local <- function (object, scans) 
-#>     {
-#>         if (missing(scans)) 
-#>             scans <- 1:length(object)
-#>         if (length(scans) == 1) {
-#>             return(object@backend$getPeakList(scans)$peaks)
-#>         }
-#>         else {
-#>             return(sapply(scans, function(x) object@backend$getPeakList(x)$peaks, 
-#>                 simplify = FALSE))
-#>         }
-#>     }
-#>     .local(object, ...)
-#> }
-#> <environment: namespace:mzR>
-#> 
-#> Signatures:
-#>         object   
-#> target  "mzRpwiz"
-#> defined "mzRpwiz"
+## Method Definition:
+## 
+## function (object, ...) 
+## {
+##     .local <- function (object, scans) 
+##     {
+##         if (missing(scans)) 
+##             scans <- 1:length(object)
+##         if (length(scans) == 1) {
+##             return(object@backend$getPeakList(scans)$peaks)
+##         }
+##         else {
+##             return(sapply(scans, function(x) object@backend$getPeakList(x)$peaks, 
+##                 simplify = FALSE))
+##         }
+##     }
+##     .local(object, ...)
+## }
+## <environment: namespace:mzR>
+## 
+## Signatures:
+##         object   
+## target  "mzRpwiz"
+## defined "mzRpwiz"
 ## End(Not run)
 ```
