@@ -1,9 +1,3 @@
-<!-- --- -->
-<!-- output: -->
-<!--   md_document: -->
-<!--     variant: markdown_github -->
-<!-- --- -->
-
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
 
@@ -150,5 +144,4 @@ getMethod("peaks", "mzRpwiz")
 ##         object   
 ## target  "mzRpwiz"
 ## defined "mzRpwiz"
-## End(Not run)
 ```
