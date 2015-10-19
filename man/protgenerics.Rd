@@ -11,6 +11,7 @@
 \alias{spectra}
 \alias{intensity}
 \alias{mz}
+\alias{mz<-}
 \alias{peptides}
 \alias{proteins}
 \alias{accessions}
