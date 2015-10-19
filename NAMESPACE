@@ -8,7 +8,7 @@ export(psms,
        tic,
        spectra,
        intensity,
-       mz,
+       mz, "mz<-"
        peptides,
        proteins,
        accessions,
