@@ -16,6 +16,5 @@ export(psms,
        mass,
        ions,
        chromatograms,
-       chromatogram)
-
-
+       chromatogram,
+       isCentroided)
