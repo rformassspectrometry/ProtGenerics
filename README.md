@@ -32,6 +32,7 @@ mass(object, ...)
 ions(object, ...)
 chromatograms(object, ...)
 chromatogram(object, ...)
+isCentroided(object, ...)
 ```
 
 ## Arguments:
@@ -100,14 +101,13 @@ Laurent Gatto <lg390@cam.ac.uk>
 
 ```r
 library("ProtGenerics")
-## Loading required package: methods
 ## List all the symbols defined in this package:
 ls('package:ProtGenerics')
 ##  [1] "accessions"    "chromatogram"  "chromatograms" "database"     
 ##  [5] "intensity"     "ions"          "mass"          "modifications"
-##  [9] "mz"            "peaks"         "peptides"      "proteins"     
-## [13] "psms"          "rtime"         "scans"         "spectra"      
-## [17] "tic"
+##  [9] "mz"            "mz<-"          "peaks"         "peptides"     
+## [13] "proteins"      "psms"          "rtime"         "scans"        
+## [17] "spectra"       "tic"
      
 library("mzR")
 ## Loading required package: Rcpp

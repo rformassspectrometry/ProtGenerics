@@ -1,6 +1,6 @@
 ## from mzR
 setGeneric("psms", function(object, ...) standardGeneric("psms"))
-setGeneric("peaks", function(object, ...) standardGeneric("peaks")) 
+setGeneric("peaks", function(object, ...) standardGeneric("peaks"))
 setGeneric("modifications", function(object, ...) standardGeneric("modifications"))
 setGeneric("database", function(object, ...) standardGeneric("database"))
 
@@ -18,10 +18,7 @@ setGeneric("accessions", function(object, ...) standardGeneric("accessions"))
 setGeneric("scans", function(object, ...) standardGeneric("scans"))
 setGeneric("mass", function(object, ...) standardGeneric("mass"))
 setGeneric("ions", function(object, ...) standardGeneric("ions"))
-setGeneric("chromatograms", function(object, ...) standardGeneric("chromatograms")) 
-setGeneric("chromatogram", function(object, ...) standardGeneric("chromatogram")) 
-
-
+setGeneric("chromatograms", function(object, ...) standardGeneric("chromatograms"))
+setGeneric("chromatogram", function(object, ...) standardGeneric("chromatogram"))
 setGeneric("mz<-", function(object, value) standardGeneric("mz<-"))
-
-
+setGeneric("isCentroided", function(object, ...) standardGeneric("isCentroided"))

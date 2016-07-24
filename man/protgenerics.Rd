@@ -20,6 +20,7 @@
 \alias{ions}
 \alias{chromatograms}
 \alias{chromatogram}
+\alias{isCentroided}
 
 
 \title{
@@ -104,6 +105,7 @@ mass(object, ...)
 ions(object, ...)
 chromatograms(object, ...)
 chromatogram(object, ...)
+isCentroided(object, ...)
 }
 
 
