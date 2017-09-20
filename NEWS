@@ -1,3 +1,7 @@
+CHANGES IN VERSION 1.9.1
+------------------------
+ o add writeMSData <2017-09-20 Wed>
+
 CHANGES IN VERSION 1.5.1
 ------------------------
  o added isCentroided generic <2016-07-23 Sat>

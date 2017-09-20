@@ -21,7 +21,7 @@
 \alias{chromatograms}
 \alias{chromatogram}
 \alias{isCentroided}
-
+\alias{writeMSData}
 
 \title{
   S4 generic functions for Bioconductor proteomics infrastructure
@@ -106,11 +106,14 @@ ions(object, ...)
 chromatograms(object, ...)
 chromatogram(object, ...)
 isCentroided(object, ...)
+writeMSData(object, file, ...)
 }
 
 
 \arguments{
-  \item{object}{Object of class for which methods are defined. } 
+  \item{object}{Object of class for which methods are defined. }
+  \item{file}{for \code{writeMSData}}: the name of the file to which the
+  data should be exported.
   \item{\dots}{Further arguments, possibly used by downstream methods. }
 }
 
