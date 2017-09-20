@@ -17,4 +17,6 @@ export(psms,
        ions,
        chromatograms,
        chromatogram,
-       isCentroided)
+       isCentroided,
+       writeMSData
+       )
