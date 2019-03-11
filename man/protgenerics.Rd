@@ -7,6 +7,7 @@
 \alias{modifications}
 \alias{database}
 \alias{rtime}
+\alias{rtime<-}
 \alias{tic}
 \alias{spectra}
 \alias{intensity}

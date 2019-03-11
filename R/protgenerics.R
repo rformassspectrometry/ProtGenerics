@@ -21,6 +21,7 @@ setGeneric("ions", function(object, ...) standardGeneric("ions"))
 setGeneric("chromatograms", function(object, ...) standardGeneric("chromatograms"))
 setGeneric("chromatogram", function(object, ...) standardGeneric("chromatogram"))
 setGeneric("mz<-", function(object, value) standardGeneric("mz<-"))
+setGeneric("rtime<-", function(object, value) standardGeneric("rtime<-"))
 setGeneric("isCentroided", function(object, ...) standardGeneric("isCentroided"))
 
 setGeneric("writeMSData", function(object, file, ...)
