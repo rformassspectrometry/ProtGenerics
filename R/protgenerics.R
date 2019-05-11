@@ -23,6 +23,7 @@ setGeneric("collisionEnergy", function(object) standardGeneric("collisionEnergy"
 setGeneric("polarity", function(object) standardGeneric("polarity"))
 setGeneric("intensity", function(object, ...) standardGeneric("intensity"))
 setGeneric("mz", function(object, ...) standardGeneric("mz"))
+setGeneric("mz<-", function(object, value) standardGeneric("mz<-"))
 
 setGeneric("processingData", function(object) standardGeneric("processingData"))
 setGeneric("processingData<-", function(object, value) standardGeneric("processingData<-"))
@@ -56,7 +57,6 @@ setGeneric("mass", function(object, ...) standardGeneric("mass"))
 setGeneric("ions", function(object, ...) standardGeneric("ions"))
 setGeneric("chromatograms", function(object, ...) standardGeneric("chromatograms"))
 setGeneric("chromatogram", function(object, ...) standardGeneric("chromatogram"))
-setGeneric("mz<-", function(object, value) standardGeneric("mz<-"))
 setGeneric("isCentroided", function(object, ...) standardGeneric("isCentroided"))
 
 setGeneric("writeMSData", function(object, file, ...) standardGeneric("writeMSData"))

@@ -2,16 +2,51 @@
 
 \alias{ProtGenerics-package}
 \alias{ProtGenerics}
+
 \alias{psms}
 \alias{peaks}
+\alias{peaks<-}
 \alias{modifications}
 \alias{database}
 \alias{rtime}
 \alias{tic}
 \alias{spectra}
+\alias{spectra<-}
+\alias{ionCount}
+\alias{scanIndex}
+\alias{precursorMz}
+\alias{precursorIntensity}
+\alias{precursorCharge}
+\alias{precursorCharge<-}
+\alias{acquisitionNum}
+\alias{precAcquisitionNum}
+\alias{precScanNum}
+\alias{msLevel}
+\alias{collisionEnergy}
+\alias{polarity}
 \alias{intensity}
 \alias{mz}
 \alias{mz<-}
+\alias{processingData}
+\alias{processingData<-}
+\alias{msInfo}
+\alias{expemail}
+\alias{exptitle}
+\alias{ionSource}
+\alias{ionSourceDetails}
+\alias{analyser}
+\alias{analyzer}
+\alias{analyzerDetails}
+\alias{analyserDetails}
+\alias{detectorType}
+\alias{instrumentManufacturer}
+\alias{instrumentCustomisations}
+\alias{smooth}
+\alias{centroided}
+\alias{centroided<-}
+\alias{smoothed}
+\alias{smoothed<-}
+\alias{instrumentModel}
 \alias{peptides}
 \alias{proteins}
 \alias{accessions}
@@ -22,6 +57,7 @@
 \alias{chromatogram}
 \alias{isCentroided}
 \alias{writeMSData}
+
 
 \title{
   S4 generic functions for Bioconductor proteomics infrastructure
@@ -120,11 +156,12 @@ writeMSData(object, file, ...)
 
 \seealso{
   \itemize{
+    
     \item The \pkg{BiocGenerics} package for S4 generic functions needed
     by many Bioconductor packages.
 
-    \item \code{\link[methods]{showMethods}} for displaying a summary of the
-          methods defined for a given generic function.
+    \item \code{\link[methods]{showMethods}} for displaying a summary of
+          the methods defined for a given generic function.
 
     \item \code{\link[methods]{selectMethod}} for getting the definition of
           a specific method.
