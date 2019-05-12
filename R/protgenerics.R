@@ -1,32 +1,66 @@
 ## -------------------------------------------------------------
-## Metadata accessors
+## Data slots
+## -------------------------------------------------------------
+
+setGeneric("processingData", function(object, ...) standardGeneric("processingData"))
+setGeneric("processingData<-", function(object, ..., value) standardGeneric("processingData<-"))
+setGeneric("spectraVariables", function(object, ...) standardGeneric("spectraVariables"))
+setGeneric("spectraNames", function(object, ...) standardGeneric("spectraNames"))
+setGeneric("spectraNames<-", function(object, ..., value) standardGeneric("spectraNames<-"))
+setGeneric("spectraData", function(object, ...) standardGeneric("spectraData"))
+setGeneric("spectraData<-", function(object, ..., value) standardGeneric("spectraData<-"))
+
+
+## -------------------------------------------------------------
+## Metadata 
 ## -------------------------------------------------------------
 
 setGeneric("ionCount", function(object, ...) standardGeneric("ionCount"))
-setGeneric("scanIndex", function(object) standardGeneric("scanIndex"))
-setGeneric("precursorMz", function(object) standardGeneric("precursorMz"))
-setGeneric("precursorIntensity", function(object) standardGeneric("precursorIntensity"))
-setGeneric("precursorCharge", function(object) standardGeneric("precursorCharge"))
-setGeneric("acquisitionNum", function(object) standardGeneric("acquisitionNum"))
-setGeneric("precAcquisitionNum", function(object) standardGeneric("precAcquisitionNum"))
-setGeneric("precScanNum", function(object) standardGeneric("precScanNum"))
-setGeneric("msLevel", function(object) standardGeneric("msLevel"))
-setGeneric("collisionEnergy", function(object) standardGeneric("collisionEnergy"))
-setGeneric("polarity", function(object) standardGeneric("polarity"))
+setGeneric("scanIndex", function(object, ...) standardGeneric("scanIndex"))
+setGeneric("precursorMz", function(object, ...) standardGeneric("precursorMz"))
+setGeneric("precursorMz<-", function(object, ..., value) standardGeneric("precursorMz<-"))
+setGeneric("precursorIntensity", function(object, ...) standardGeneric("precursorIntensity"))
+setGeneric("precursorIntensity<-", function(object, ..., value) standardGeneric("precursorIntensity<-"))
+setGeneric("precursorCharge", function(object, ...) standardGeneric("precursorCharge"))
+setGeneric("precursorCharge<-", function(object, ..., value) standardGeneric("precursorCharge<-"))
+setGeneric("acquisitionNum", function(object, ...) standardGeneric("acquisitionNum"))
+setGeneric("precAcquisitionNum", function(object, ...) standardGeneric("precAcquisitionNum"))
+setGeneric("precScanNum", function(object, ...) standardGeneric("precScanNum"))
+setGeneric("msLevel", function(object, ...) standardGeneric("msLevel"))
+setGeneric("msLevel<-", function(object, ..., value) standardGeneric("msLevel<-"))
+
+setGeneric("collisionEnergy", function(object, ...) standardGeneric("collisionEnergy"))
+setGeneric("collisionEnergy<-", function(object, ..., value) standardGeneric("collisionEnergy<-"))
+setGeneric("polarity", function(object, ...) standardGeneric("polarity"))
+setGeneric("polarity<-", function(object, ..., value) standardGeneric("polarity<-"))
 setGeneric("tic", function(object, ...) standardGeneric("tic"))
-setGeneric("rtime", function(object, ...) standardGeneric("rtime")) 
+setGeneric("rtime", function(object, ...) standardGeneric("rtime"))
+setGeneric("rtime<-", function(object, ..., value) standardGeneric("rtime<-"))
 setGeneric("centroided", function(object, ...) standardGeneric("centroided"))
+setGeneric("centroided<-", function(object, ..., value) standardGeneric("centroided<-"))
 setGeneric("smoothed", function(object) standardGeneric("smoothed"))
+setGeneric("smoothed<-", function(object, ..., value) standardGeneric("smoothed<-"))
 setGeneric("isCentroided", function(object, ...) standardGeneric("isCentroided"))
 
+setGeneric("isolationWindowTargetMz", function(object, ...) standardGeneric("isolationWindowTargetMz"))
+setGeneric("isolationWindowTargetMz<-", function(object, ..., value) standardGeneric("isolationWindowTargetMz<-"))
+setGeneric("isolationWindowLowerMz", function(object, ...) standardGeneric("isolationWindowLowerMz"))
+setGeneric("isolationWindowLowerMz<-", function(object, ..., value) standardGeneric("isolationWindowLowerMz<-"))
+setGeneric("isolationWindowUpperMz", function(object, ...) standardGeneric("isolationWindowUpperMz"))
+setGeneric("isolationWindowUpperMz<-", function(object, ..., value) standardGeneric("isolationWindowUpperMz<-"))
+    
 ## -------------------------------------------------------------
-## Raw data accessors
+## Raw data 
 ## -------------------------------------------------------------
 
 setGeneric("peaks", function(object, ...) standardGeneric("peaks"))
+setGeneric("peaks<-", function(object, ..., value) standardGeneric("peaks<-"))
 setGeneric("intensity", function(object, ...) standardGeneric("intensity"))
+setGeneric("intensity<-", function(object, ..., value) standardGeneric("intensity<-"))
 setGeneric("mz", function(object, ...) standardGeneric("mz"))
+setGeneric("mz<-", function(object, ..., value) standardGeneric("mz<-"))
 setGeneric("spectra", function(object, ...) standardGeneric("spectra"))
+setGeneric("spectra<-", function(object, ..., value) standardGeneric("spectra<-"))
 setGeneric("scans", function(object, ...) standardGeneric("scans"))
 setGeneric("chromatograms", function(object, ...) standardGeneric("chromatograms"))
 setGeneric("chromatogram", function(object, ...) standardGeneric("chromatogram"))
@@ -34,7 +68,7 @@ setGeneric("mass", function(object, ...) standardGeneric("mass"))
 setGeneric("ions", function(object, ...) standardGeneric("ions"))
 
 ## -------------------------------------------------------------
-## Identification-related accessors
+## Identification
 ## -------------------------------------------------------------
 
 setGeneric("modifications", function(object, ...) standardGeneric("modifications"))
@@ -45,7 +79,7 @@ setGeneric("proteins", function(object, ...) standardGeneric("proteins"))
 setGeneric("accessions", function(object, ...) standardGeneric("accessions"))
 
 ## -------------------------------------------------------------
-## Instrument-related accessors
+## Instrument
 ## -------------------------------------------------------------
 
 setGeneric("msInfo", function(object) standardGeneric("msInfo"))
@@ -62,13 +96,11 @@ setGeneric("instrumentManufacturer", function(object) standardGeneric("instrumen
 setGeneric("instrumentCustomisations", function(object) standardGeneric("instrumentCustomisations"))
 setGeneric("instrumentModel", function(object) standardGeneric("instrumentModel"))
 
-
 ## -------------------------------------------------------------
 ## Data-processing
 ## -------------------------------------------------------------
 
 setGeneric("smooth", function(x, ...) standardGeneric("smooth")) ## stats::smooth already exists
-setGeneric("processingData", function(object) standardGeneric("processingData"))
 setGeneric("combineFeatures", function(object, ...) standardGeneric("combineFeatures")) 
 
 ## -------------------------------------------------------------
@@ -76,15 +108,3 @@ setGeneric("combineFeatures", function(object, ...) standardGeneric("combineFeat
 ## -------------------------------------------------------------
 
 setGeneric("writeMSData", function(object, file, ...) standardGeneric("writeMSData"))
-
-## -------------------------------------------------------------
-## Replacement functions
-## -------------------------------------------------------------
-
-setGeneric("peaks<-", function(object, ..., value) standardGeneric("peaks<-"))
-setGeneric("spectra<-", function(object, ..., value) standardGeneric("spectra<-"))
-setGeneric("precursorCharge<-", function(object, value) standardGeneric("precursorCharge<-"))
-setGeneric("mz<-", function(object, value) standardGeneric("mz<-"))
-setGeneric("processingData<-", function(object, value) standardGeneric("processingData<-"))
-setGeneric("centroided<-", function(object, ..., value) standardGeneric("centroided<-"))
-setGeneric("smoothed<-", function(object, ..., value) standardGeneric("smoothed<-"))

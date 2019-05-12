@@ -58,7 +58,24 @@
 \alias{chromatogram}
 \alias{isCentroided}
 \alias{writeMSData}
-
+\alias{isolationWindowTargetMz}
+\alias{isolationWindowTargetMz<-}
+\alias{isolationWindowLowerMz}
+\alias{isolationWindowLowerMz<-}
+\alias{isolationWindowUpperMz}
+\alias{isolationWindowUpperMz<-}
+\alias{intensity<-}
+\alias{precursorMz<-}
+\alias{precursorIntensity<-}
+\alias{msLevel<-}
+\alias{collisionEnergy<-}
+\alias{polarity<-}
+\alias{rtime<-}
+\alias{spectraNames}
+\alias{spectraNames<-}
+\alias{spectraData}
+\alias{spectraData<-}
+\alias{spectraVariables}
 
 \title{
   S4 generic functions for Bioconductor proteomics infrastructure
