@@ -45,7 +45,7 @@ setGeneric("proteins", function(object, ...) standardGeneric("proteins"))
 setGeneric("accessions", function(object, ...) standardGeneric("accessions"))
 
 ## -------------------------------------------------------------
-## Instrucment-related accessors
+## Instrument-related accessors
 ## -------------------------------------------------------------
 
 setGeneric("msInfo", function(object) standardGeneric("msInfo"))
@@ -69,7 +69,7 @@ setGeneric("instrumentModel", function(object) standardGeneric("instrumentModel"
 
 setGeneric("smooth", function(x, ...) standardGeneric("smooth")) ## stats::smooth already exists
 setGeneric("processingData", function(object) standardGeneric("processingData"))
-
+setGeneric("combineFeatures", function(object, ...) standardGeneric("combineFeatures")) 
 
 ## -------------------------------------------------------------
 ## IO

@@ -27,6 +27,7 @@
 \alias{intensity}
 \alias{mz}
 \alias{mz<-}
+\alias{combineFeatures}
 \alias{processingData}
 \alias{processingData<-}
 \alias{msInfo}
