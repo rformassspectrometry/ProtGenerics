@@ -12,7 +12,7 @@ setGeneric("spectraData<-", function(object, ..., value) standardGeneric("spectr
 
 
 ## -------------------------------------------------------------
-## Metadata 
+## Metadata
 ## -------------------------------------------------------------
 
 setGeneric("ionCount", function(object, ...) standardGeneric("ionCount"))
@@ -48,9 +48,9 @@ setGeneric("isolationWindowLowerMz", function(object, ...) standardGeneric("isol
 setGeneric("isolationWindowLowerMz<-", function(object, ..., value) standardGeneric("isolationWindowLowerMz<-"))
 setGeneric("isolationWindowUpperMz", function(object, ...) standardGeneric("isolationWindowUpperMz"))
 setGeneric("isolationWindowUpperMz<-", function(object, ..., value) standardGeneric("isolationWindowUpperMz<-"))
-    
+
 ## -------------------------------------------------------------
-## Raw data 
+## Raw data
 ## -------------------------------------------------------------
 
 setGeneric("peaks", function(object, ...) standardGeneric("peaks"))
@@ -77,6 +77,7 @@ setGeneric("psms", function(object, ...) standardGeneric("psms"))
 setGeneric("peptides", function(object, ...) standardGeneric("peptides"))
 setGeneric("proteins", function(object, ...) standardGeneric("proteins"))
 setGeneric("accessions", function(object, ...) standardGeneric("accessions"))
+setGeneric("tolerance", function(object, ...) standardGeneric("tolerance"))
 
 ## -------------------------------------------------------------
 ## Instrument
@@ -101,7 +102,7 @@ setGeneric("instrumentModel", function(object) standardGeneric("instrumentModel"
 ## -------------------------------------------------------------
 
 setGeneric("smooth", function(x, ...) standardGeneric("smooth")) ## stats::smooth already exists
-setGeneric("combineFeatures", function(object, ...) standardGeneric("combineFeatures")) 
+setGeneric("combineFeatures", function(object, ...) standardGeneric("combineFeatures"))
 
 ## -------------------------------------------------------------
 ## IO

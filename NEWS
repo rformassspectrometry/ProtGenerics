@@ -1,11 +1,15 @@
+CHANGES IN VERSION 1.17.3
+-------------------------
+o New tolerance generic <2019-08-16 Fri>
+
 CHANGES IN VERSION 1.17.2
-------------------------
+-------------------------
 o New generics (see issue #8) <2019-05-12 Sun>
 
 CHANGES IN VERSION 1.17.1
-------------------------
+-------------------------
 o Move many generics from MSnbase <2019-05-11 Sat>
- 
+
 CHANGES IN VERSION 1.9.1
 ------------------------
 o add writeMSData <2017-09-20 Wed>
@@ -17,7 +21,7 @@ CHANGES IN VERSION 1.5.1
 CHANGES IN VERSION 1.5.0
 ------------------------
  o Version bump Bioc devel
- 
+
 CHANGES IN VERSION 1.4.0
 ------------------------
  o Version bump Bioc 3.3
@@ -29,36 +33,36 @@ CHANGES IN VERSION 1.3.3
 CHANGES IN VERSION 1.3.2
 ------------------------
  o Not depending on BiocGenerics <2015-10-16 Fri>
- 
+
 CHANGES IN VERSION 1.3.1
 ------------------------
  o added chomatogram generic (previously defined in MSnbase)
    <2015-10-15 Thu>
- 
+
 CHANGES IN VERSION 1.3.0
 ------------------------
  o Bioc release 3.3
- 
+
 CHANGES IN VERSION 1.2.0
 ------------------------
  o Bioc release 3.2
- 
+
 CHANGES IN VERSION 1.1.1
 ------------------------
  o new mz<- generic function <2015-10-01 Thu>
- 
+
 CHANGES IN VERSION 1.1.0
 ------------------------
  o Bioc devel version 3.2
- 
+
 CHANGES IN VERSION 1.0.0
 ------------------------
  o Bioc release version 3.1
- 
+
 CHANGES IN VERSION 0.99.3
 -------------------------
  o update man with when and why ProtGenerics [2015-03-16 Mon]
- 
+
 CHANGES IN VERSION 0.99.2
 -------------------------
  o updating DESCRIPTION as with BiocContributions::clean
