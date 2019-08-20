@@ -9,7 +9,10 @@ setGeneric("spectraNames", function(object, ...) standardGeneric("spectraNames")
 setGeneric("spectraNames<-", function(object, ..., value) standardGeneric("spectraNames<-"))
 setGeneric("spectraData", function(object, ...) standardGeneric("spectraData"))
 setGeneric("spectraData<-", function(object, ..., value) standardGeneric("spectraData<-"))
-
+setGeneric("dataOrigin", function(object, ...) standardGeneric("dataOrigin"))
+setGeneric("dataOrigin<-", function(object, value) standardGeneric("dataOrigin<-"))
+setGeneric("dataStorage", function(object, ...) standardGeneric("dataStorage"))
+setGeneric("dataStorage<-", function(object, value) standardGeneric("dataStorage<-"))
 
 ## -------------------------------------------------------------
 ## Metadata
@@ -48,6 +51,9 @@ setGeneric("isolationWindowLowerMz", function(object, ...) standardGeneric("isol
 setGeneric("isolationWindowLowerMz<-", function(object, ..., value) standardGeneric("isolationWindowLowerMz<-"))
 setGeneric("isolationWindowUpperMz", function(object, ...) standardGeneric("isolationWindowUpperMz"))
 setGeneric("isolationWindowUpperMz<-", function(object, ..., value) standardGeneric("isolationWindowUpperMz<-"))
+
+setGeneric("productMz", function(object, ...) standardGeneric("productMz"))
+setGeneric("productMz<-", function(object, ..., value) standardGeneric("productMz<-"))
 
 ## -------------------------------------------------------------
 ## Raw data
@@ -109,3 +115,20 @@ setGeneric("combineFeatures", function(object, ...) standardGeneric("combineFeat
 ## -------------------------------------------------------------
 
 setGeneric("writeMSData", function(object, file, ...) standardGeneric("writeMSData"))
+
+## -------------------------------------------------------------
+## Filtering
+## -------------------------------------------------------------
+
+setGeneric("filterAcquisitionNum", function(object, ...) standardGeneric("filterAcquisitionNum"))
+setGeneric("filterDataOrigin", function(object, ...) standardGeneric("filterDataOrigin"))
+setGeneric("filterDataStorage", function(object, ...) standardGeneric("filterDataStorage"))
+setGeneric("filterEmptySpectra", function(object, ...) standardGeneric("filterEmptySpectra"))
+setGeneric("filterIsolationWindow", function(object, ...) standardGeneric("filterIsolationWindow"))
+setGeneric("filterMsLevel", function(object, ...) standardGeneric("filterMsLevel"))
+setGeneric("filterPolarity", function(object, ...) standardGeneric("filterPolarity"))
+setGeneric("filterPrecursorMz", function(object, ...) standardGeneric("filterPrecursorMz"))
+setGeneric("filterProductMz", function(object, ...) standardGeneric("filterProductMz"))
+setGeneric("filterPrecursorScan", function(object, ...) standardGeneric("filterPrecursorScan"))
+setGeneric("filterRt", function(object, ...) standardGeneric("filterRt"))
+setGeneric("filterMz", function(object, ...) standardGeneric("filterMz"))

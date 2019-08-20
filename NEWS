@@ -1,3 +1,7 @@
+CHANGES IN VERSION 1.17.4
+-------------------------
+o New generics needed in Spectra and Chromatograms packages <2019-08-20 Tue>
+
 CHANGES IN VERSION 1.17.3
 -------------------------
 o New tolerance generic <2019-08-16 Fri>

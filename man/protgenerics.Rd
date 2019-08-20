@@ -76,6 +76,25 @@
 \alias{spectraData}
 \alias{spectraData<-}
 \alias{spectraVariables}
+\alias{dataOrigin}
+\alias{dataOrigin<-}
+\alias{dataStorage}
+\alias{dataStorage<-}
+\alias{productMz}
+\alias{productMz<-}
+\alias{filterAcquisitionNum}
+\alias{filterDataOrigin}
+\alias{filterDataStorage}
+\alias{filterEmptySpectra}
+\alias{filterIsolationWindow}
+\alias{filterMsLevel}
+\alias{filterPolarity}
+\alias{filterPrecursorMz}
+\alias{filterProductMz}
+\alias{filterPrecursorScan}
+\alias{filterRt}
+\alias{filterMz}
+\alias{tolerance}
 
 \title{
   S4 generic functions for Bioconductor proteomics infrastructure
