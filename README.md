@@ -9,7 +9,7 @@
 These generic functions provide basic interfaces to operations on and
 data access to proteomics and mass spectrometry infrastructure in the
 Bioconductor project.
-  
+
 For the details, please consult the respective methods' manual pages.
 
 ## Usage:
@@ -83,9 +83,6 @@ pull request on:
 
 [https://github.com/lgatto/ProtGenerics](https://github.com/lgatto/ProtGenerics)
 
-## Author(s):
-
-Laurent Gatto <lg390@cam.ac.uk>
 
 ## See Also:
 
@@ -101,14 +98,60 @@ Laurent Gatto <lg390@cam.ac.uk>
 
 ```r
 library("ProtGenerics")
+## 
+## Attaching package: 'ProtGenerics'
+## The following object is masked from 'package:stats':
+## 
+##     smooth
 ## List all the symbols defined in this package:
 ls('package:ProtGenerics')
-##  [1] "accessions"    "chromatogram"  "chromatograms" "database"     
-##  [5] "intensity"     "ions"          "mass"          "modifications"
-##  [9] "mz"            "mz<-"          "peaks"         "peptides"     
-## [13] "proteins"      "psms"          "rtime"         "scans"        
-## [17] "spectra"       "tic"
-     
+##  [1] "accessions"                "acquisitionNum"           
+##  [3] "analyser"                  "analyserDetails"          
+##  [5] "analyzer"                  "analyzerDetails"          
+##  [7] "centroided"                "centroided<-"             
+##  [9] "chromatogram"              "chromatograms"            
+## [11] "collisionEnergy"           "collisionEnergy<-"        
+## [13] "combineFeatures"           "database"                 
+## [15] "dataOrigin"                "dataOrigin<-"             
+## [17] "dataStorage"               "dataStorage<-"            
+## [19] "detectorType"              "expemail"                 
+## [21] "exptitle"                  "filterAcquisitionNum"     
+## [23] "filterDataOrigin"          "filterDataStorage"        
+## [25] "filterEmptySpectra"        "filterIsolationWindow"    
+## [27] "filterMsLevel"             "filterMz"                 
+## [29] "filterPolarity"            "filterPrecursorMz"        
+## [31] "filterPrecursorScan"       "filterProductMz"          
+## [33] "filterRt"                  "instrumentCustomisations" 
+## [35] "instrumentManufacturer"    "instrumentModel"          
+## [37] "intensity"                 "intensity<-"              
+## [39] "ionCount"                  "ions"                     
+## [41] "ionSource"                 "ionSourceDetails"         
+## [43] "isCentroided"              "isolationWindowLowerMz"   
+## [45] "isolationWindowLowerMz<-"  "isolationWindowTargetMz"  
+## [47] "isolationWindowTargetMz<-" "isolationWindowUpperMz"   
+## [49] "isolationWindowUpperMz<-"  "mass"                     
+## [51] "modifications"             "msInfo"                   
+## [53] "msLevel"                   "msLevel<-"                
+## [55] "mz"                        "mz<-"                     
+## [57] "peaks"                     "peaks<-"                  
+## [59] "peptides"                  "polarity"                 
+## [61] "polarity<-"                "precAcquisitionNum"       
+## [63] "precScanNum"               "precursorCharge"          
+## [65] "precursorCharge<-"         "precursorIntensity"       
+## [67] "precursorIntensity<-"      "precursorMz"              
+## [69] "precursorMz<-"             "processingData"           
+## [71] "processingData<-"          "productMz"                
+## [73] "productMz<-"               "proteins"                 
+## [75] "psms"                      "rtime"                    
+## [77] "rtime<-"                   "scanIndex"                
+## [79] "scans"                     "smooth"                   
+## [81] "smoothed"                  "smoothed<-"               
+## [83] "spectra"                   "spectra<-"                
+## [85] "spectraData"               "spectraData<-"            
+## [87] "spectraNames"              "spectraNames<-"           
+## [89] "spectraVariables"          "tic"                      
+## [91] "tolerance"                 "writeMSData"
+
 library("mzR")
 ## Loading required package: Rcpp
 ## What methods exists for 'peaks'
@@ -117,7 +160,7 @@ showMethods("peaks")
 ## object="mzRnetCDF"
 ## object="mzRpwiz"
 ## object="mzRramp"
-     
+
 ## To look at one method in particular
 getMethod("peaks", "mzRpwiz")
 ## Method Definition:
@@ -125,19 +168,10 @@ getMethod("peaks", "mzRpwiz")
 ## function (object, ...) 
 ## {
 ##     .local <- function (object, scans) 
-##     {
-##         if (missing(scans)) 
-##             scans <- 1:length(object)
-##         if (length(scans) == 1) {
-##             return(object@backend$getPeakList(scans)$peaks)
-##         }
-##         else {
-##             return(sapply(scans, function(x) object@backend$getPeakList(x)$peaks, 
-##                 simplify = FALSE))
-##         }
-##     }
+##     .peaks(object, scans)
 ##     .local(object, ...)
 ## }
+## <bytecode: 0x55f4d18b5e58>
 ## <environment: namespace:mzR>
 ## 
 ## Signatures:

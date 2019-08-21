@@ -14,7 +14,7 @@ knitr::opts_chunk$set(
 These generic functions provide basic interfaces to operations on and
 data access to proteomics and mass spectrometry infrastructure in the
 Bioconductor project.
-  
+
 For the details, please consult the respective methods' manual pages.
 
 ## Usage:
@@ -88,9 +88,6 @@ pull request on:
 
 [https://github.com/lgatto/ProtGenerics](https://github.com/lgatto/ProtGenerics)
 
-## Author(s):
-
-Laurent Gatto <lg390@cam.ac.uk>
 
 ## See Also:
 
@@ -107,11 +104,11 @@ Laurent Gatto <lg390@cam.ac.uk>
 library("ProtGenerics")
 ## List all the symbols defined in this package:
 ls('package:ProtGenerics')
-     
+
 library("mzR")
 ## What methods exists for 'peaks'
 showMethods("peaks")
-     
+
 ## To look at one method in particular
 getMethod("peaks", "mzRpwiz")
 ```
