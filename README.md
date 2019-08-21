@@ -2,7 +2,7 @@
 
 
 
-# S4 generic functions for Bioconductor proteomics infrastructure
+# S4 generic functions for Bioconductor mass spectrometry infrastructure
 
 ## Description:
 
@@ -171,7 +171,7 @@ getMethod("peaks", "mzRpwiz")
 ##     .peaks(object, scans)
 ##     .local(object, ...)
 ## }
-## <bytecode: 0x55f4d18b5e58>
+## <bytecode: 0x55e224b86068>
 ## <environment: namespace:mzR>
 ## 
 ## Signatures:
