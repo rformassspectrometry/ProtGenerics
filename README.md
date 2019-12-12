@@ -171,7 +171,7 @@ getMethod("peaks", "mzRpwiz")
 ##     .peaks(object, scans)
 ##     .local(object, ...)
 ## }
-## <bytecode: 0x55e224b86068>
+## <bytecode: 0x55bf12660790>
 ## <environment: namespace:mzR>
 ## 
 ## Signatures:
