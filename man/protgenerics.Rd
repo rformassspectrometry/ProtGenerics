@@ -28,6 +28,7 @@
 \alias{mz}
 \alias{mz<-}
 \alias{combineFeatures}
+\alias{aggregateFeatures}
 \alias{processingData}
 \alias{processingData<-}
 \alias{msInfo}
@@ -131,7 +132,7 @@
   }
 
   \subsection{When to define a generic in \code{ProtGenerics}?}{
-  
+
     \code{ProtGenerics} is not meant to be the central package for
     generics, nor should it stop developers from defining the generics
     they need. It is a means to centralise generics that are defined in
@@ -153,11 +154,11 @@
 
     More generics can be added on request by opening an issue or sending
     a pull request on:
-  
+
     \url{https://github.com/lgatto/ProtGenerics}
 
   }
-  
+
 }
 
 \usage{
@@ -193,25 +194,25 @@ writeMSData(object, file, ...)
 
 \seealso{
   \itemize{
-    
+
     \item The \pkg{BiocGenerics} package for S4 generic functions needed
     by many Bioconductor packages.
 
     \item \code{\link[methods]{showMethods}} for displaying a summary of
-          the methods defined for a given generic function.
+	  the methods defined for a given generic function.
 
     \item \code{\link[methods]{selectMethod}} for getting the definition of
-          a specific method.
+	  a specific method.
 
     \item \code{\link[methods]{setGeneric}} and
-          \code{\link[methods]{setMethod}} for defining generics and methods.
+	  \code{\link[methods]{setMethod}} for defining generics and methods.
   }
 }
 
 
 
 \author{
-  Laurent Gatto <lg390@cam.ac.uk>
+  Laurent Gatto
 }
 
 
