@@ -1,3 +1,11 @@
+CHANGES IN VERSION 1.19.2
+-------------------------
+o new filterNA generic
+
+CHANGES IN VERSION 1.19.1
+-------------------------
+o new aggregateFeatures generic
+
 CHANGES IN VERSION 1.17.4
 -------------------------
 o New generics needed in Spectra and Chromatograms packages <2019-08-20 Tue>

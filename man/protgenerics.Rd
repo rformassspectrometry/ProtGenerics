@@ -95,6 +95,7 @@
 \alias{filterPrecursorScan}
 \alias{filterRt}
 \alias{filterMz}
+\alias{filterNA}
 \alias{tolerance}
 
 \title{

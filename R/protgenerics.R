@@ -133,3 +133,4 @@ setGeneric("filterProductMz", function(object, ...) standardGeneric("filterProdu
 setGeneric("filterPrecursorScan", function(object, ...) standardGeneric("filterPrecursorScan"))
 setGeneric("filterRt", function(object, ...) standardGeneric("filterRt"))
 setGeneric("filterMz", function(object, ...) standardGeneric("filterMz"))
+setGeneric("filterNA", function(object, ...) standardGeneric("filterNA"))
