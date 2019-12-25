@@ -110,6 +110,7 @@ setGeneric("instrumentModel", function(object) standardGeneric("instrumentModel"
 setGeneric("smooth", function(x, ...) standardGeneric("smooth")) ## stats::smooth already exists
 setGeneric("combineFeatures", function(object, ...) standardGeneric("combineFeatures"))
 setGeneric("aggregateFeatures", function(object, ...) standardGeneric("aggregateFeatures"))
+setGeneric("impute", function(x, ...) standardGeneric("impute"))
 
 ## -------------------------------------------------------------
 ## IO

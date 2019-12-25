@@ -29,6 +29,7 @@
 \alias{mz<-}
 \alias{combineFeatures}
 \alias{aggregateFeatures}
+\alias{impute}
 \alias{processingData}
 \alias{processingData<-}
 \alias{msInfo}
