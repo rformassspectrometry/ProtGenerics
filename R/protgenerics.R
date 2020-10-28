@@ -84,6 +84,7 @@ setGeneric("peptides", function(object, ...) standardGeneric("peptides"))
 setGeneric("proteins", function(object, ...) standardGeneric("proteins"))
 setGeneric("accessions", function(object, ...) standardGeneric("accessions"))
 setGeneric("tolerance", function(object, ...) standardGeneric("tolerance"))
+setGeneric("calculateFragments", function(sequence, object, ...) standardGeneric("calculateFragments"))
 
 ## -------------------------------------------------------------
 ## Instrument
@@ -135,3 +136,4 @@ setGeneric("filterPrecursorScan", function(object, ...) standardGeneric("filterP
 setGeneric("filterRt", function(object, ...) standardGeneric("filterRt"))
 setGeneric("filterMz", function(object, ...) standardGeneric("filterMz"))
 setGeneric("filterNA", function(object, ...) standardGeneric("filterNA"))
+

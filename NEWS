@@ -1,3 +1,7 @@
+CHANGES IN VERSION 1.23.1
+-------------------------
+o new calculateFragments generic (moved from MSnbase)
+
 CHANGES IN VERSION 1.19.3
 -------------------------
 o new impute generic
