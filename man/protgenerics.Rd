@@ -98,6 +98,8 @@
 \alias{filterMz}
 \alias{filterNA}
 \alias{tolerance}
+\alias{calculateFragments}
+\alias{compounds}
 
 \title{
   S4 generic functions for Bioconductor proteomics infrastructure

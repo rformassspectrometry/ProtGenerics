@@ -55,6 +55,8 @@ setGeneric("isolationWindowUpperMz<-", function(object, ..., value) standardGene
 setGeneric("productMz", function(object, ...) standardGeneric("productMz"))
 setGeneric("productMz<-", function(object, ..., value) standardGeneric("productMz<-"))
 
+setGeneric("compounds", function(object, ...) standardGeneric("compounds"))
+
 ## -------------------------------------------------------------
 ## Raw data
 ## -------------------------------------------------------------

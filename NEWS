@@ -1,3 +1,7 @@
+CHANGES IN VERSION 1.23.2
+-------------------------
+o new compounds generic.
+
 CHANGES IN VERSION 1.23.1
 -------------------------
 o new calculateFragments generic (moved from MSnbase)
