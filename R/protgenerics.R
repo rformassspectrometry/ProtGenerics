@@ -138,4 +138,5 @@ setGeneric("filterPrecursorScan", function(object, ...) standardGeneric("filterP
 setGeneric("filterRt", function(object, ...) standardGeneric("filterRt"))
 setGeneric("filterMz", function(object, ...) standardGeneric("filterMz"))
 setGeneric("filterNA", function(object, ...) standardGeneric("filterNA"))
+setGeneric("filterIntensity", function(object) standardGeneric("filterIntensity"))
 

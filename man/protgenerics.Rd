@@ -100,6 +100,7 @@
 \alias{tolerance}
 \alias{calculateFragments}
 \alias{compounds}
+\alias{filterIntensity}
 
 \title{
   S4 generic functions for Bioconductor proteomics infrastructure
