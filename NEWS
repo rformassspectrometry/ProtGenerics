@@ -1,3 +1,7 @@
+CHANGES IN VERSION 1.23.4
+-------------------------
+o new virtual Param class.
+
 CHANGES IN VERSION 1.23.3
 -------------------------
 o new filterIntensity generic.
