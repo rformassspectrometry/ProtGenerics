@@ -7,13 +7,13 @@ knitr::opts_chunk$set(
 )
 ```
 
-# S4 generic functions for Bioconductor mass spectrometry infrastructure
+# Generic infrastructure for Bioconductor mass spectrometry packages
 
 ## Description:
 
-These generic functions provide basic interfaces to operations on and
-data access to proteomics and mass spectrometry infrastructure in the
-Bioconductor project.
+These generic functions and classes provide basic interfaces to
+operations on and data access to mass spectrometry infrastructure in
+the Bioconductor project.
 
 For the details, please consult the respective methods' manual pages.
 

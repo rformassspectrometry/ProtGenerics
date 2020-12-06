@@ -2,13 +2,13 @@
 
 
 
-# S4 generic functions for Bioconductor mass spectrometry infrastructure
+# Generic infrastructure for Bioconductor mass spectrometry packages
 
 ## Description:
 
-These generic functions provide basic interfaces to operations on and
-data access to proteomics and mass spectrometry infrastructure in the
-Bioconductor project.
+These generic functions and classes provide basic interfaces to
+operations on and data access to mass spectrometry infrastructure in
+the Bioconductor project.
 
 For the details, please consult the respective methods' manual pages.
 
@@ -173,7 +173,7 @@ getMethod("peaks", "mzRpwiz")
 ##     .peaks(object, scans)
 ##     .local(object, ...)
 ## }
-## <bytecode: 0x5631acd0d0a0>
+## <bytecode: 0x55c106e63600>
 ## <environment: namespace:mzR>
 ## 
 ## Signatures:
