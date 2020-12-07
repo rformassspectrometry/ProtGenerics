@@ -1,3 +1,7 @@
+CHANGES IN VERSION 1.23.5
+-------------------------
+o new alignRt generic.
+
 CHANGES IN VERSION 1.23.4
 -------------------------
 o new virtual Param class.

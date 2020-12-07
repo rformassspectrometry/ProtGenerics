@@ -140,3 +140,4 @@ setGeneric("filterMz", function(object, ...) standardGeneric("filterMz"))
 setGeneric("filterNA", function(object, ...) standardGeneric("filterNA"))
 setGeneric("filterIntensity", function(object, ...) standardGeneric("filterIntensity"))
 
+setGeneric("alignRt", function(x, y, ...) standardGeneric("alignRt"))
