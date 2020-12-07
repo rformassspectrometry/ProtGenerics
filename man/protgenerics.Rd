@@ -101,6 +101,7 @@
 \alias{calculateFragments}
 \alias{compounds}
 \alias{filterIntensity}
+\alias{alignRt}
 
 \title{
   S4 generic functions for Bioconductor proteomics infrastructure
