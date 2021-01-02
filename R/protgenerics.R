@@ -114,6 +114,8 @@ setGeneric("smooth", function(x, ...) standardGeneric("smooth")) ## stats::smoot
 setGeneric("combineFeatures", function(object, ...) standardGeneric("combineFeatures"))
 setGeneric("aggregateFeatures", function(object, ...) standardGeneric("aggregateFeatures"))
 setGeneric("impute", function(object, ...) standardGeneric("impute"))
+setGeneric("alignRt", function(x, y, ...) standardGeneric("alignRt"))
+setGeneric("quantify", function(object, ...) standardGeneric("quantify"))
 
 ## -------------------------------------------------------------
 ## IO
@@ -139,5 +141,3 @@ setGeneric("filterRt", function(object, ...) standardGeneric("filterRt"))
 setGeneric("filterMz", function(object, ...) standardGeneric("filterMz"))
 setGeneric("filterNA", function(object, ...) standardGeneric("filterNA"))
 setGeneric("filterIntensity", function(object, ...) standardGeneric("filterIntensity"))
-
-setGeneric("alignRt", function(x, y, ...) standardGeneric("alignRt"))
