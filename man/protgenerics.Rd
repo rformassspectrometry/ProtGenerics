@@ -102,6 +102,7 @@
 \alias{compounds}
 \alias{filterIntensity}
 \alias{alignRt}
+\alias{quantify}
 
 \title{
   S4 generic functions for Bioconductor proteomics infrastructure
