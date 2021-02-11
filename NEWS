@@ -1,3 +1,7 @@
+CHANGES IN VERSION 1.23.7
+-------------------------
+o Add ProcessingStep object and related methods (moved from Spectra)
+
 CHANGES IN VERSION 1.23.6
 -------------------------
 o Added quantify generics (moved from MSnbase) <2021-01-02 Sat>
