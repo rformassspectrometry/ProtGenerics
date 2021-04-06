@@ -135,6 +135,7 @@ setGeneric("filterIsolationWindow", function(object, ...) standardGeneric("filte
 setGeneric("filterMsLevel", function(object, ...) standardGeneric("filterMsLevel"))
 setGeneric("filterPolarity", function(object, ...) standardGeneric("filterPolarity"))
 setGeneric("filterPrecursorMz", function(object, ...) standardGeneric("filterPrecursorMz"))
+setGeneric("filterPrecursorCharge", function(object, ...) standardGeneric("filterPrecursorCharge"))
 setGeneric("filterProductMz", function(object, ...) standardGeneric("filterProductMz"))
 setGeneric("filterPrecursorScan", function(object, ...) standardGeneric("filterPrecursorScan"))
 setGeneric("filterRt", function(object, ...) standardGeneric("filterRt"))

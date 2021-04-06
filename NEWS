@@ -1,3 +1,7 @@
+CHANGES IN VERSION 1.23.8
+-------------------------
+o Added new filterPrecursorCharge generic <2021-04-06 Tue>
+
 CHANGES IN VERSION 1.23.7
 -------------------------
 o Add ProcessingStep object and related methods (moved from Spectra)

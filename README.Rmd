@@ -38,6 +38,7 @@ ions(object, ...)
 chromatograms(object, ...)
 chromatogram(object, ...)
 isCentroided(object, ...)
+## and many more - see below
 ```
 
 ## Arguments:

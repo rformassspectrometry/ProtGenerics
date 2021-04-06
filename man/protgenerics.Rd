@@ -92,6 +92,7 @@
 \alias{filterMsLevel}
 \alias{filterPolarity}
 \alias{filterPrecursorMz}
+\alias{filterPrecursorCharge}
 \alias{filterProductMz}
 \alias{filterPrecursorScan}
 \alias{filterRt}
@@ -206,13 +207,13 @@ writeMSData(object, file, ...)
     by many Bioconductor packages.
 
     \item \code{\link[methods]{showMethods}} for displaying a summary of
-	  the methods defined for a given generic function.
+          the methods defined for a given generic function.
 
     \item \code{\link[methods]{selectMethod}} for getting the definition of
-	  a specific method.
+          a specific method.
 
     \item \code{\link[methods]{setGeneric}} and
-	  \code{\link[methods]{setMethod}} for defining generics and methods.
+          \code{\link[methods]{setMethod}} for defining generics and methods.
   }
 }
 
