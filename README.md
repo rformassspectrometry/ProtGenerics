@@ -99,11 +99,6 @@ pull request on:
 
 ```r
 library("ProtGenerics")
-## 
-## Attaching package: 'ProtGenerics'
-## The following object is masked from 'package:stats':
-## 
-##     smooth
 ## List all the symbols defined in this package:
 ls('package:ProtGenerics')
 ##   [1] "accessions"                "acquisitionNum"           
@@ -156,7 +151,7 @@ ls('package:ProtGenerics')
 ##  [95] "spectra"                   "spectra<-"                
 ##  [97] "spectraData"               "spectraData<-"            
 ##  [99] "spectraNames"              "spectraNames<-"           
-##  [ reached getOption("max.print") -- omitted 4 entries ]
+##  [ reached getOption("max.print") -- omitted 5 entries ]
 
 library("mzR")
 ## Loading required package: Rcpp
@@ -177,7 +172,7 @@ getMethod("peaks", "mzRpwiz")
 ##     .peaks(object, scans)
 ##     .local(object, ...)
 ## }
-## <bytecode: 0x561ed86e7350>
+## <bytecode: 0x55a4a0622130>
 ## <environment: namespace:mzR>
 ## 
 ## Signatures:
