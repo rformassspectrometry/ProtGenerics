@@ -1,3 +1,7 @@
+CHANGES IN VERSION 1.25.0
+-------------------------
+o Bioc devel (3.14) version bump
+
 CHANGES IN VERSION 1.23.9
 -------------------------
 o Added new uniqueMsLevel generic <2021-04-08 Thu>
