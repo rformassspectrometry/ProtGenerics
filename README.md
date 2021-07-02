@@ -99,59 +99,64 @@ pull request on:
 
 ```r
 library("ProtGenerics")
+## 
+## Attaching package: 'ProtGenerics'
+## The following object is masked from 'package:stats':
+## 
+##     smooth
 ## List all the symbols defined in this package:
 ls('package:ProtGenerics')
 ##   [1] "accessions"                "acquisitionNum"           
 ##   [3] "aggregateFeatures"         "alignRt"                  
 ##   [5] "analyser"                  "analyserDetails"          
 ##   [7] "analyzer"                  "analyzerDetails"          
-##   [9] "as.list"                   "calculateFragments"       
-##  [11] "centroided"                "centroided<-"             
-##  [13] "chromatogram"              "chromatograms"            
-##  [15] "collisionEnergy"           "collisionEnergy<-"        
-##  [17] "combineFeatures"           "compounds"                
-##  [19] "database"                  "dataOrigin"               
-##  [21] "dataOrigin<-"              "dataStorage"              
-##  [23] "dataStorage<-"             "detectorType"             
-##  [25] "executeProcessingStep"     "expemail"                 
-##  [27] "exptitle"                  "filterAcquisitionNum"     
-##  [29] "filterDataOrigin"          "filterDataStorage"        
-##  [31] "filterEmptySpectra"        "filterIntensity"          
-##  [33] "filterIsolationWindow"     "filterMsLevel"            
-##  [35] "filterMz"                  "filterNA"                 
-##  [37] "filterPolarity"            "filterPrecursorCharge"    
-##  [39] "filterPrecursorMz"         "filterPrecursorScan"      
-##  [41] "filterProductMz"           "filterRt"                 
-##  [43] "impute"                    "instrumentCustomisations" 
-##  [45] "instrumentManufacturer"    "instrumentModel"          
-##  [47] "intensity"                 "intensity<-"              
-##  [49] "ionCount"                  "ions"                     
-##  [51] "ionSource"                 "ionSourceDetails"         
-##  [53] "isCentroided"              "isolationWindowLowerMz"   
-##  [55] "isolationWindowLowerMz<-"  "isolationWindowTargetMz"  
-##  [57] "isolationWindowTargetMz<-" "isolationWindowUpperMz"   
-##  [59] "isolationWindowUpperMz<-"  "mass"                     
-##  [61] "modifications"             "msInfo"                   
-##  [63] "msLevel"                   "msLevel<-"                
-##  [65] "mz"                        "mz<-"                     
-##  [67] "peaks"                     "peaks<-"                  
-##  [69] "peptides"                  "polarity"                 
-##  [71] "polarity<-"                "precAcquisitionNum"       
-##  [73] "precScanNum"               "precursorCharge"          
-##  [75] "precursorCharge<-"         "precursorIntensity"       
-##  [77] "precursorIntensity<-"      "precursorMz"              
-##  [79] "precursorMz<-"             "processingData"           
-##  [81] "processingData<-"          "ProcessingStep"           
-##  [83] "productMz"                 "productMz<-"              
-##  [85] "proteins"                  "psms"                     
-##  [87] "quantify"                  "rtime"                    
-##  [89] "rtime<-"                   "scanIndex"                
-##  [91] "scans"                     "smooth"                   
-##  [93] "smoothed"                  "smoothed<-"               
-##  [95] "spectra"                   "spectra<-"                
-##  [97] "spectraData"               "spectraData<-"            
-##  [99] "spectraNames"              "spectraNames<-"           
-##  [ reached getOption("max.print") -- omitted 5 entries ]
+##   [9] "as.list"                   "bin"                      
+##  [11] "calculateFragments"        "centroided"               
+##  [13] "centroided<-"              "chromatogram"             
+##  [15] "chromatograms"             "collisionEnergy"          
+##  [17] "collisionEnergy<-"         "combineFeatures"          
+##  [19] "compareChromatograms"      "compareSpectra"           
+##  [21] "compounds"                 "database"                 
+##  [23] "dataOrigin"                "dataOrigin<-"             
+##  [25] "dataStorage"               "dataStorage<-"            
+##  [27] "detectorType"              "executeProcessingStep"    
+##  [29] "expemail"                  "exptitle"                 
+##  [31] "filterAcquisitionNum"      "filterDataOrigin"         
+##  [33] "filterDataStorage"         "filterEmptySpectra"       
+##  [35] "filterIntensity"           "filterIsolationWindow"    
+##  [37] "filterMsLevel"             "filterMz"                 
+##  [39] "filterNA"                  "filterPolarity"           
+##  [41] "filterPrecursorCharge"     "filterPrecursorMz"        
+##  [43] "filterPrecursorScan"       "filterProductMz"          
+##  [45] "filterRt"                  "impute"                   
+##  [47] "instrumentCustomisations"  "instrumentManufacturer"   
+##  [49] "instrumentModel"           "intensity"                
+##  [51] "intensity<-"               "ionCount"                 
+##  [53] "ions"                      "ionSource"                
+##  [55] "ionSourceDetails"          "isCentroided"             
+##  [57] "isolationWindowLowerMz"    "isolationWindowLowerMz<-" 
+##  [59] "isolationWindowTargetMz"   "isolationWindowTargetMz<-"
+##  [61] "isolationWindowUpperMz"    "isolationWindowUpperMz<-" 
+##  [63] "mass"                      "modifications"            
+##  [65] "msInfo"                    "msLevel"                  
+##  [67] "msLevel<-"                 "mz"                       
+##  [69] "mz<-"                      "peaks"                    
+##  [71] "peaks<-"                   "peptides"                 
+##  [73] "polarity"                  "polarity<-"               
+##  [75] "precAcquisitionNum"        "precScanNum"              
+##  [77] "precursorCharge"           "precursorCharge<-"        
+##  [79] "precursorIntensity"        "precursorIntensity<-"     
+##  [81] "precursorMz"               "precursorMz<-"            
+##  [83] "processingData"            "processingData<-"         
+##  [85] "ProcessingStep"            "productMz"                
+##  [87] "productMz<-"               "proteins"                 
+##  [89] "psms"                      "quantify"                 
+##  [91] "rtime"                     "rtime<-"                  
+##  [93] "scanIndex"                 "scans"                    
+##  [95] "smooth"                    "smoothed"                 
+##  [97] "smoothed<-"                "spectra"                  
+##  [99] "spectra<-"                 "spectraData"              
+##  [ reached getOption("max.print") -- omitted 8 entries ]
 
 library("mzR")
 ## Loading required package: Rcpp
@@ -172,7 +177,7 @@ getMethod("peaks", "mzRpwiz")
 ##     .peaks(object, scans)
 ##     .local(object, ...)
 ## }
-## <bytecode: 0x55a4a0622130>
+## <bytecode: 0x56104679bfa0>
 ## <environment: namespace:mzR>
 ## 
 ## Signatures:
