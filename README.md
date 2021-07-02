@@ -82,7 +82,7 @@ the developers and would resolve issues when they arise.
 More generics can be added on request by opening an issue or sending a
 pull request on:
 
-[https://github.com/lgatto/ProtGenerics](https://github.com/lgatto/ProtGenerics)
+[https://github.com/RforMassSpectrometry/ProtGenerics](https://github.com/RforMassSpectrometry/ProtGenerics)
 
 
 ## See Also:
@@ -177,7 +177,7 @@ getMethod("peaks", "mzRpwiz")
 ##     .peaks(object, scans)
 ##     .local(object, ...)
 ## }
-## <bytecode: 0x56104679bfa0>
+## <bytecode: 0x55e106e7aef0>
 ## <environment: namespace:mzR>
 ## 
 ## Signatures:

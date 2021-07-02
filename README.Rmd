@@ -87,7 +87,7 @@ the developers and would resolve issues when they arise.
 More generics can be added on request by opening an issue or sending a
 pull request on:
 
-[https://github.com/lgatto/ProtGenerics](https://github.com/lgatto/ProtGenerics)
+[https://github.com/RforMassSpectrometry/ProtGenerics](https://github.com/RforMassSpectrometry/ProtGenerics)
 
 
 ## See Also:
