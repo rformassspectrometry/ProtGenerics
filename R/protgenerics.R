@@ -117,6 +117,11 @@ setGeneric("aggregateFeatures", function(object, ...) standardGeneric("aggregate
 setGeneric("impute", function(object, ...) standardGeneric("impute"))
 setGeneric("alignRt", function(x, y, ...) standardGeneric("alignRt"))
 setGeneric("quantify", function(object, ...) standardGeneric("quantify"))
+setGeneric("bin", function(x, ...) standardGeneric("bin"))
+setGeneric("compareSpectra", function(x, y, ...)
+    standardGeneric("compareSpectra"))
+setGeneric("compareChromatograms", function(x, y, ...)
+    standardGeneric("compareChromatograms"))
 
 ## -------------------------------------------------------------
 ## IO
