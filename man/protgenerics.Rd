@@ -105,6 +105,9 @@
 \alias{filterIntensity}
 \alias{alignRt}
 \alias{quantify}
+\alias{bin}
+\alias{compareSpectra}
+\alias{compareChromatograms}
 
 \title{
   S4 generic functions for Bioconductor proteomics infrastructure
