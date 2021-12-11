@@ -108,6 +108,7 @@
 \alias{bin}
 \alias{compareSpectra}
 \alias{compareChromatograms}
+\alias{adjacencyMatrix}
 
 \title{
   S4 generic functions for Bioconductor proteomics infrastructure
@@ -193,6 +194,7 @@ chromatograms(object, ...)
 chromatogram(object, ...)
 isCentroided(object, ...)
 writeMSData(object, file, ...)
+## and many more
 }
 
 

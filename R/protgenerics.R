@@ -88,6 +88,7 @@ setGeneric("proteins", function(object, ...) standardGeneric("proteins"))
 setGeneric("accessions", function(object, ...) standardGeneric("accessions"))
 setGeneric("tolerance", function(object, ...) standardGeneric("tolerance"))
 setGeneric("calculateFragments", function(sequence, object, ...) standardGeneric("calculateFragments"))
+setGeneric("adjacencyMatrix", function(object, ...) standardGeneric("adjacencyMatrix"))
 
 ## -------------------------------------------------------------
 ## Instrument
