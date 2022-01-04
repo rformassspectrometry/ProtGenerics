@@ -109,6 +109,7 @@
 \alias{compareSpectra}
 \alias{compareChromatograms}
 \alias{adjacencyMatrix}
+\alias{addProcessing}
 
 \title{
   S4 generic functions for Bioconductor proteomics infrastructure
