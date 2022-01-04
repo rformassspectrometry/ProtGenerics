@@ -1,5 +1,9 @@
 CHANGES IN VERSION 1.27.1
 -------------------------
+o Add addProcessing generic <2022-01-04 Tue>
+
+CHANGES IN VERSION 1.27.1
+-------------------------
 o Add new adjacencyMatrix generic <2021-12-11 Sat>
 
 CHANGES IN VERSION 1.27.0
