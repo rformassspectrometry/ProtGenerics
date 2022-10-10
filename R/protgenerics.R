@@ -125,6 +125,7 @@ setGeneric("compareChromatograms", function(x, y, ...)
     standardGeneric("compareChromatograms"))
 setGeneric("addProcessing", function(object, ...)
     standardGeneric("addProcessing"))
+setGeneric("spectrapply", function(object, ...) standardGeneric("spectrapply"))
 
 ## -------------------------------------------------------------
 ## IO
