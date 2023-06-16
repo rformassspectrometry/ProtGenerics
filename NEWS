@@ -1,4 +1,12 @@
-CHANGES IN VERSION 1.27.1
+CHANGES IN VERSION 1.33.1
+-------------------------
+o rename uniqueMsLevel() to uniqueMsLevels()
+
+CHANGES IN VERSION 1.29.1
+-------------------------
+o Add spectrapply generic
+
+CHANGES IN VERSION 1.27.2
 -------------------------
 o Add addProcessing generic <2022-01-04 Tue>
 

@@ -156,7 +156,7 @@ ls('package:ProtGenerics')
 ##  [95] "scanIndex"                 "scans"                    
 ##  [97] "smooth"                    "smoothed"                 
 ##  [99] "smoothed<-"                "spectra"                  
-##  [ reached getOption("max.print") -- omitted 10 entries ]
+##  [ reached getOption("max.print") -- omitted 11 entries ]
 
 library("mzR")
 ## Loading required package: Rcpp
@@ -165,7 +165,6 @@ showMethods("peaks")
 ## Function: peaks (package ProtGenerics)
 ## object="mzRnetCDF"
 ## object="mzRpwiz"
-## object="mzRramp"
 
 ## To look at one method in particular
 getMethod("peaks", "mzRpwiz")
@@ -177,7 +176,7 @@ getMethod("peaks", "mzRpwiz")
 ##     .peaks(object, scans)
 ##     .local(object, ...)
 ## }
-## <bytecode: 0x564dec2d3b70>
+## <bytecode: 0x55fe309bfe60>
 ## <environment: namespace:mzR>
 ## 
 ## Signatures:
