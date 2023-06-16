@@ -31,7 +31,7 @@ setGeneric("precAcquisitionNum", function(object, ...) standardGeneric("precAcqu
 setGeneric("precScanNum", function(object, ...) standardGeneric("precScanNum"))
 setGeneric("msLevel", function(object, ...) standardGeneric("msLevel"))
 setGeneric("msLevel<-", function(object, ..., value) standardGeneric("msLevel<-"))
-setGeneric("uniqueMsLevel", function(object, ...) standardGeneric("uniqueMsLevel"))
+setGeneric("uniqueMsLevels", functiona(object, ...) standardGeneric("uniqueMsLevels"))
 
 setGeneric("collisionEnergy", function(object, ...) standardGeneric("collisionEnergy"))
 setGeneric("collisionEnergy<-", function(object, ..., value) standardGeneric("collisionEnergy<-"))
