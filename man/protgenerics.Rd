@@ -22,7 +22,7 @@
 \alias{precAcquisitionNum}
 \alias{precScanNum}
 \alias{msLevel}
-\alias{uniqueMsLevel}
+\alias{uniqueMsLevels}
 \alias{collisionEnergy}
 \alias{polarity}
 \alias{intensity}
