@@ -152,3 +152,21 @@ setGeneric("filterRt", function(object, ...) standardGeneric("filterRt"))
 setGeneric("filterMz", function(object, ...) standardGeneric("filterMz"))
 setGeneric("filterNA", function(object, ...) standardGeneric("filterNA"))
 setGeneric("filterIntensity", function(object, ...) standardGeneric("filterIntensity"))
+
+#' @title Filter features
+#'
+#' @description
+#'
+#' Implementations of this generic filter function are supposed to filter
+#' *features* in `object` based on a filter criteria defined by
+#' parameter `filter`.
+#'
+#' @param object The object to filter.
+#'
+#' @param filter The filtering criteria on which `object` should be filtered.
+#'
+#' @param ... Optional parameters.
+#' 
+#' @md
+setGeneric("filterFeatures",
+           function(object, filter, ...) standardGeneric("filterFeatures"))

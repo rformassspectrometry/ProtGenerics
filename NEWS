@@ -1,6 +1,10 @@
+CHANGES IN VERSION 1.35.1
+-------------------------
+o Add `filterFeatures` generic.
+
 CHANGES IN VERSION 1.33.1
 -------------------------
-o rename uniqueMsLevel() to uniqueMsLevels()
+o Rename uniqueMsLevel() to uniqueMsLevels()
 
 CHANGES IN VERSION 1.29.1
 -------------------------
