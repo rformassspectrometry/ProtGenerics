@@ -1,3 +1,7 @@
+CHANGES IN VERSION 1.35.2
+-------------------------
+o Add `filterSpectra` generic.
+
 CHANGES IN VERSION 1.35.1
 -------------------------
 o Add `filterFeatures` generic.
