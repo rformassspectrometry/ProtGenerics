@@ -2,7 +2,7 @@ Package: ProtGenerics
 Title: Generic infrastructure for Bioconductor mass spectrometry packages
 Description: S4 generic functions and classes needed by Bioconductor
         proteomics packages.
-Version: 1.35.1
+Version: 1.35.2
 Author: Laurent Gatto <laurent.gatto@uclouvain.be>,
     Johannes Rainer <johannes.rainer@eurac.edu>
 Maintainer: Laurent Gatto <laurent.gatto@uclouvain.be>
@@ -13,4 +13,4 @@ Suggests:
     testthat
 License: Artistic-2.0
 NeedsCompilation: no
-RoxygenNote: 7.3.0
+RoxygenNote: 7.3.1

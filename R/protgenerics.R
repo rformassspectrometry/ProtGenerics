@@ -170,3 +170,22 @@ setGeneric("filterIntensity", function(object, ...) standardGeneric("filterInten
 #' @md
 setGeneric("filterFeatures",
            function(object, filter, ...) standardGeneric("filterFeatures"))
+
+#' @title Filter Spectra
+#'
+#' @description
+#'
+#' Implementations of this generic filter function are supposed to filter
+#' *spectra* (e.g. within a `Spectra` object) based on filter criteria
+#' defined with parameter `filter`.
+#'
+#' @param object The object to filter.
+#'
+#' @param filter The filtering criteria based on which `object` should be
+#'     filtered.
+#'
+#' @param ... Optional parameters.
+#' 
+#' @md
+setGeneric("filterSpectra", def = function(object, filter, ...)
+    standardGeneric("filterSpectra"))
