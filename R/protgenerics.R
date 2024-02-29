@@ -145,13 +145,21 @@ setGeneric("filterIsolationWindow", function(object, ...) standardGeneric("filte
 setGeneric("filterMsLevel", function(object, ...) standardGeneric("filterMsLevel"))
 setGeneric("filterPolarity", function(object, ...) standardGeneric("filterPolarity"))
 setGeneric("filterPrecursorMz", function(object, ...) standardGeneric("filterPrecursorMz"))
+setGeneric("filterPrecursorMzRange", function(object, ...) standardGeneric("filterPrecursorMzRange"))
+setGeneric("filterPrecursorMzValues", function(object, ...) standardGeneric("filterPrecursorMzValues"))
 setGeneric("filterPrecursorCharge", function(object, ...) standardGeneric("filterPrecursorCharge"))
 setGeneric("filterProductMz", function(object, ...) standardGeneric("filterProductMz"))
+setGeneric("filterProductMzRange", function(object, ...) standardGeneric("filterProductMzRange"))
+setGeneric("filterProductMzValues", function(object, ...) standardGeneric("filterProductMzValues"))
 setGeneric("filterPrecursorScan", function(object, ...) standardGeneric("filterPrecursorScan"))
 setGeneric("filterRt", function(object, ...) standardGeneric("filterRt"))
 setGeneric("filterMz", function(object, ...) standardGeneric("filterMz"))
+setGeneric("filterMzRange", function(object, ...) standardGeneric("filterMzRange"))
+setGeneric("filterMzValues", function(object, ...) standardGeneric("filterMzValues"))
 setGeneric("filterNA", function(object, ...) standardGeneric("filterNA"))
 setGeneric("filterIntensity", function(object, ...) standardGeneric("filterIntensity"))
+setGeneric("filterRanges", function(object, ...) standardGeneric("filterRanges"))
+setGeneric("filterValues", function(object, ...) standardGeneric("filterValues"))
 
 #' @title Filter features
 #'
@@ -189,3 +197,64 @@ setGeneric("filterFeatures",
 #' @md
 setGeneric("filterSpectra", def = function(object, filter, ...)
     standardGeneric("filterSpectra"))
+
+#' @title General backend methods
+#'
+#' @description
+#'
+#' These methods are used for implementations of *backends* e.g. for `Spectra`
+#' or `Chromatograms` object to initialize the backend, merge backends or
+#' extract specific information from them.
+#' See the respective help pages (e.g. in the `Spectra` or `Chromatograms`
+#' packages) for information on the actual implementations of these methods.
+#'
+#' @param backend A *backend* object.
+#' 
+#' @param object The *backend* object.
+#'
+#' @param ... Optional parameters.
+#'
+#' @md
+#'
+#' @name backendInitialize
+setGeneric("backendInitialize", function(object, ...)
+    standardGeneric("backendInitialize"))
+
+#' @rdname backendInitialize
+setGeneric("isReadOnly", function(object) standardGeneric("isReadOnly"))
+
+#' @rdname backendInitialize
+setGeneric("setBackend", function(object, backend, ...)
+    standardGeneric("setBackend"))
+
+#' @rdname backendInitialize
+setGeneric("backendMerge", function(object, ...)
+           standardGeneric("backendMerge"))
+
+#' @title Get or set MS peak data
+#'
+#' @description
+#' 
+#' These methods get or set mass spectrometry (MS) peaks data, which can be
+#' m/z, intensity or retention time values.
+#' See the respective help pages (e.g. in the `Spectra` or `Chromatograms`
+#' packages) for information on the actual implementations of these methods.
+#'
+#' @param object A data object.
+#'
+#' @param value Replacement for peaks data.
+#'
+#' @param ... Optional parameters.
+#' 
+#' @md
+#'
+#' @name peaksData
+setGeneric("peaksData", function(object, ...) standardGeneric("peaksData"))
+
+#' @rdname peaksData
+setGeneric("peaksData<-", function(object, value)
+    standardGeneric("peaksData<-"))
+
+#' @rdname peaksData
+setGeneric("peaksVariables", function(object, ...)
+    standardGeneric("peaksVariables"))

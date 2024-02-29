@@ -93,11 +93,17 @@
 \alias{filterMsLevel}
 \alias{filterPolarity}
 \alias{filterPrecursorMz}
+\alias{filterPrecursorMzRange}
+\alias{filterPrecursorMzValues}
 \alias{filterPrecursorCharge}
 \alias{filterProductMz}
+\alias{filterProductMzRange}
+\alias{filterProductMzValues}
 \alias{filterPrecursorScan}
 \alias{filterRt}
 \alias{filterMz}
+\alias{filterMzValues}
+\alias{filterMzRange}
 \alias{filterNA}
 \alias{tolerance}
 \alias{calculateFragments}
@@ -111,6 +117,8 @@
 \alias{adjacencyMatrix}
 \alias{addProcessing}
 \alias{spectrapply}
+\alias{filterRanges}
+\alias{filterValues}
 
 \title{
   S4 generic functions for Bioconductor proteomics infrastructure

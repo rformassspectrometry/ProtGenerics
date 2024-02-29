@@ -1,3 +1,10 @@
+CHANGES IN VERSION 1.35.3
+-------------------------
+o Add `backendInitialize`, `backendMerge`, `setBackend`, `isReadOnly`,
+  `peaksData`, `peaksData<-` and `peaksVariables`, `filterRanges`,
+  `filterValues`, `filterPrecursorMzRange`, `filterPrecursorMzValues`,
+  `filterProductMzRange`, `filterProductMzValues` generics.
+
 CHANGES IN VERSION 1.35.2
 -------------------------
 o Add `filterSpectra` generic.
