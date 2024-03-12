@@ -5,6 +5,9 @@
 \alias{isReadOnly}
 \alias{setBackend}
 \alias{backendMerge}
+\alias{backendBpparam}
+\alias{backendParallelFactor}
+\alias{supportsSetBackend}
 \title{General backend methods}
 \usage{
 backendInitialize(object, ...)
@@ -14,6 +17,12 @@ isReadOnly(object)
 setBackend(object, backend, ...)
 
 backendMerge(object, ...)
+
+backendBpparam(object, ...)
+
+backendParallelFactor(object, ...)
+
+supportsSetBackend(object, ...)
 }
 \arguments{
 \item{object}{The \emph{backend} object.}
