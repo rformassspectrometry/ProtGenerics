@@ -231,6 +231,18 @@ setGeneric("setBackend", function(object, backend, ...)
 setGeneric("backendMerge", function(object, ...)
            standardGeneric("backendMerge"))
 
+#' @rdname backendInitialize
+setGeneric("backendBpparam", def = function(object, ...)
+    standardGeneric("backendBpparam"))
+
+#' @rdname backendInitialize
+setGeneric("backendParallelFactor", def = function(object, ...)
+    standardGeneric("backendParallelFactor"))
+
+#' @rdname backendInitialize
+setGeneric("supportsSetBackend", function(object, ...)
+    standardGeneric("supportsSetBackend"))
+
 #' @title Get or set MS peak data
 #'
 #' @description

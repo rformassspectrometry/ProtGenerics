@@ -1,3 +1,8 @@
+CHANGES IN VERSION 1.35.4
+-------------------------
+o Move `backendParallelFactor` and `backendBpparam` and `supportsSetBackend`
+  generics from `Spectra`.
+
 CHANGES IN VERSION 1.35.3
 -------------------------
 o Move `backendInitialize`, `backendMerge`, `setBackend`, `isReadOnly`,
