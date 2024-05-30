@@ -270,3 +270,31 @@ setGeneric("peaksData<-", function(object, value)
 #' @rdname peaksData
 setGeneric("peaksVariables", function(object, ...)
     standardGeneric("peaksVariables"))
+
+#' @title Store and load data objects and results
+#'
+#' @description
+#'
+#' `storeResults()` and `loadResults()` allow to save and restore data objects
+#' in format(s) defined by parameter `param`. These methods thus allow to
+#' implement serializing and deserializing functions for (result) objects in
+#' formats other than the e.g. standard RData format. Also, the user can define
+#' the expected type of the returned object with the `object` parameter of
+#' `loadResults()`.
+#'
+#' @param object For `storeResults()`: the object to be exported. For
+#'     `loadResults()`: the type of object that is expected to be returned.
+#'
+#' @param param A *parameter* object that defines the format and eventually
+#'     specific settings for that format.
+#'
+#' @param ... Optional parameters.
+#' @md
+#' 
+#' @name storeResults
+setGeneric("storeResults", function(object, param, ...),
+    standardGeneric("storeResults"))
+
+#' @rdname storeResults
+setGeneric("loadResults", function(object, param, ...),
+    standardGeneric("loadResults"))

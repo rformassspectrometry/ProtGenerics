@@ -1,3 +1,7 @@
+CHANGES IN VERSION 1.37.1
+-------------------------
+o Add generics for methods `storeResults()` and `loadResults()`.
+
 CHANGES IN VERSION 1.35.4
 -------------------------
 o Move `backendParallelFactor` and `backendBpparam` and `supportsSetBackend`
