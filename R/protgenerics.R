@@ -126,6 +126,8 @@ setGeneric("compareChromatograms", function(x, y, ...)
 setGeneric("addProcessing", function(object, ...)
     standardGeneric("addProcessing"))
 setGeneric("spectrapply", function(object, ...) standardGeneric("spectrapply"))
+setGeneric("estimatePrecursorIntensity", function(object, ...)
+    standardGeneric("estimatePrecursorIntensity"))
 
 ## -------------------------------------------------------------
 ## IO
@@ -270,3 +272,4 @@ setGeneric("peaksData<-", function(object, value)
 #' @rdname peaksData
 setGeneric("peaksVariables", function(object, ...)
     standardGeneric("peaksVariables"))
+
