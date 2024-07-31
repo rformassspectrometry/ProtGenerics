@@ -119,6 +119,7 @@
 \alias{spectrapply}
 \alias{filterRanges}
 \alias{filterValues}
+\alias{estimatePrecursorIntensity}
 
 \title{
   S4 generic functions for Bioconductor proteomics infrastructure
