@@ -273,3 +273,19 @@ setGeneric("peaksData<-", function(object, value)
 setGeneric("peaksVariables", function(object, ...)
     standardGeneric("peaksVariables"))
 
+#' @title Extracting elements by index
+#'
+#' @description
+#'
+#' The `extractByIndex()` method allows to subset an object (or extract
+#' elements from it) by providing their `integer` indices.
+#'
+#' @param object The object to subset/from which to extract elements.
+#'
+#' @param i `integer` with the indices.
+#' 
+#' @md
+#' 
+#' @export
+setGeneric("extractByIndex", function(object, i)
+    standardGeneric("extractByIndex"))
