@@ -1,3 +1,8 @@
+CHANGES IN VERSION 1.39.2
+-------------------------
+o Move `applyProcessing()`, `processingChunksize()`, `processingChunkSize()<-`
+  and `processingChunkFactor()` generics from the Spectra package.
+
 CHANGES IN VERSION 1.39.1
 -------------------------
 o Add `extractByIndex()` generic.
