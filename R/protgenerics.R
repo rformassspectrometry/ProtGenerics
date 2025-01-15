@@ -199,7 +199,7 @@ setGeneric("filterFeatures",
 #'     filtered.
 #'
 #' @param ... Optional parameters.
-#' 
+#'
 #' @md
 setGeneric("filterSpectra", def = function(object, filter, ...)
     standardGeneric("filterSpectra"))
