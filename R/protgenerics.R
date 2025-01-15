@@ -2,6 +2,8 @@
 ## Data slots
 ## -------------------------------------------------------------
 
+setGeneric("processingChunkSize", function(object, ...) standardGeneric("processingChunkSize"))
+setGeneric("processingChunkSize<-", function(object, ..., value) standardGeneric("processingChunkSize<-"))
 setGeneric("processingData", function(object, ...) standardGeneric("processingData"))
 setGeneric("processingData<-", function(object, ..., value) standardGeneric("processingData<-"))
 setGeneric("spectraVariables", function(object, ...) standardGeneric("spectraVariables"))
@@ -125,6 +127,8 @@ setGeneric("compareChromatograms", function(x, y, ...)
     standardGeneric("compareChromatograms"))
 setGeneric("addProcessing", function(object, ...)
     standardGeneric("addProcessing"))
+setGeneric("applyProcessing", function(object, ...) standardGeneric("applyProcessing"))
+setGeneric("processingChunkFactor", function(object, ...) standardGeneric("processingChunkFactor"))
 setGeneric("spectrapply", function(object, ...) standardGeneric("spectrapply"))
 setGeneric("estimatePrecursorIntensity", function(object, ...)
     standardGeneric("estimatePrecursorIntensity"))
@@ -195,7 +199,7 @@ setGeneric("filterFeatures",
 #'     filtered.
 #'
 #' @param ... Optional parameters.
-#' 
+#'
 #' @md
 setGeneric("filterSpectra", def = function(object, filter, ...)
     standardGeneric("filterSpectra"))
@@ -248,7 +252,7 @@ setGeneric("supportsSetBackend", function(object, ...)
 #' @title Get or set MS peak data
 #'
 #' @description
-#' 
+#'
 #' These methods get or set mass spectrometry (MS) peaks data, which can be
 #' m/z, intensity or retention time values.
 #' See the respective help pages (e.g. in the `Spectra` or `Chromatograms`
@@ -259,7 +263,7 @@ setGeneric("supportsSetBackend", function(object, ...)
 #' @param value Replacement for peaks data.
 #'
 #' @param ... Optional parameters.
-#' 
+#'
 #' @md
 #'
 #' @name peaksData
@@ -283,9 +287,9 @@ setGeneric("peaksVariables", function(object, ...)
 #' @param object The object to subset/from which to extract elements.
 #'
 #' @param i `integer` with the indices.
-#' 
+#'
 #' @md
-#' 
+#'
 #' @export
 setGeneric("extractByIndex", function(object, i)
     standardGeneric("extractByIndex"))
