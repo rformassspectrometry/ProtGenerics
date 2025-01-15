@@ -115,7 +115,6 @@
 \alias{compareSpectra}
 \alias{compareChromatograms}
 \alias{adjacencyMatrix}
-\alias{addProcessing}
 \alias{spectrapply}
 \alias{filterRanges}
 \alias{filterValues}

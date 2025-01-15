@@ -2,8 +2,6 @@
 ## Data slots
 ## -------------------------------------------------------------
 
-setGeneric("processingChunkSize", function(object, ...) standardGeneric("processingChunkSize"))
-setGeneric("processingChunkSize<-", function(object, ..., value) standardGeneric("processingChunkSize<-"))
 setGeneric("processingData", function(object, ...) standardGeneric("processingData"))
 setGeneric("processingData<-", function(object, ..., value) standardGeneric("processingData<-"))
 setGeneric("spectraVariables", function(object, ...) standardGeneric("spectraVariables"))
@@ -125,10 +123,6 @@ setGeneric("compareSpectra", function(x, y, ...)
     standardGeneric("compareSpectra"))
 setGeneric("compareChromatograms", function(x, y, ...)
     standardGeneric("compareChromatograms"))
-setGeneric("addProcessing", function(object, ...)
-    standardGeneric("addProcessing"))
-setGeneric("applyProcessing", function(object, ...) standardGeneric("applyProcessing"))
-setGeneric("processingChunkFactor", function(object, ...) standardGeneric("processingChunkFactor"))
 setGeneric("spectrapply", function(object, ...) standardGeneric("spectrapply"))
 setGeneric("estimatePrecursorIntensity", function(object, ...)
     standardGeneric("estimatePrecursorIntensity"))
@@ -293,3 +287,55 @@ setGeneric("peaksVariables", function(object, ...)
 #' @export
 setGeneric("extractByIndex", function(object, i)
     standardGeneric("extractByIndex"))
+
+#' @title Processing Queue
+#'
+#' @name processingQueue
+#'
+#' @description
+#' 
+#' These methods are related to the *processing queue* implemented in the
+#' [Spectra](https://github.com/RforMassSpectrometry/Spectra) and
+#' [Chromatograms](https://github.com/RforMassSpectrometry/Chromatograms)
+#' packages.
+#'
+#' - `addProcessing()` adds a processing step to the processing queue.
+#'
+#' - `applyProcessing()` execute the processing queue replacing the original
+#'   data in `object` with the processed one.
+#' 
+#' - `processingChunkSize()` and `processingChunkSize()<-` are supposed to get
+#'   and set the number of elements (e.g. spectra) for which the data is loaded
+#'   into memory and processed at a time.
+#'
+#' - `processingChunkFactor()`: defines a `factor` that can be used to split
+#'   `object` into chunks defined by the length of `object` and its
+#'   `processingChunkSize()`.
+#' 
+#' @param object The object with the processing queue.
+#'
+#' @param value The replacement value.
+#'
+#' @param ... Additional parameters to be defined.
+#'
+NULL
+
+#' @rdname processingQueue
+setGeneric("processingChunkSize", function(object, ...)
+    standardGeneric("processingChunkSize"))
+
+#' @rdname processingQueue
+setGeneric("processingChunkSize<-", function(object, ..., value)
+    standardGeneric("processingChunkSize<-"))
+
+#' @rdname processingQueue
+setGeneric("addProcessing", function(object, ...)
+    standardGeneric("addProcessing"))
+
+#' @rdname processingQueue
+setGeneric("applyProcessing", function(object, ...)
+    standardGeneric("applyProcessing"))
+
+#' @rdname processingQueue
+setGeneric("processingChunkFactor", function(object, ...)
+    standardGeneric("processingChunkFactor"))
